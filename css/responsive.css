@@ -1,0 +1,13 @@
+@media(max-width:768px){
+
+    :root{
+
+        --title-size:40px;
+
+        --section-title:28px;
+
+        --section-space:80px;
+
+    }
+
+}

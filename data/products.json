@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+
+    "slug": "smart-pet-feeder",
+
+    "category": "Automatic Feeder",
+
+    "productName": "Smart Pet Feeder",
+
+    "tagline": "Tenang, Meski Kamu Jauh.",
+
+    "heroVideo": "assets/videos/smart-feeder.mp4",
+
+    "description": "Smart Pet Feeder membantu memberikan makanan secara terjadwal sehingga kucing tetap mendapatkan pakan tepat waktu meskipun kamu sedang bekerja, bepergian, atau berlibur.",
+
+    "gallery": [
+      "assets/images/gallery/gallery-01.jpg",
+      "assets/images/gallery/gallery-02.jpg",
+      "assets/images/gallery/gallery-03.jpg"
+    ],
+
+    "benefits": [
+      "Jadwal makan lebih teratur",
+      "Mengurangi rasa khawatir saat meninggalkan rumah",
+      "Praktis digunakan setiap hari"
+    ],
+
+    "variants": [
+
+      {
+        "id": 101,
+
+        "name": "3 Liter",
+
+        "price": 399000,
+
+        "badge": "Entry Level",
+
+        "image": "assets/images/products/3-liter.png",
+
+        "recommended": false,
+
+        "stock": true,
+
+        "features": [
+          "Kapasitas 3 Liter",
+          "Timer Makan",
+          "Mudah Dibersihkan"
+        ]
+      },
+
+      {
+        "id": 102,
+
+        "name": "5 Liter WiFi",
+
+        "price": 589000,
+
+        "badge": "Best Seller",
+
+        "image": "assets/images/products/5-liter-wifi.png",
+
+        "recommended": true,
+
+        "stock": true,
+
+        "features": [
+          "WiFi Control",
+          "Jadwal via Aplikasi",
+          "Kapasitas 5 Liter"
+        ]
+      },
+
+      {
+        "id": 103,
+
+        "name": "5 Liter Camera",
+
+        "price": 699000,
+
+        "badge": "Premium",
+
+        "image": "assets/images/products/5-liter-camera.png",
+
+        "recommended": false,
+
+        "stock": true,
+
+        "features": [
+          "Live Camera",
+          "WiFi",
+          "Voice Interaction"
+        ]
+      }
+
+    ],
+
+    "faq": [
+
+      {
+        "question": "Apakah bisa menggunakan baterai?",
+        "answer": "Ya. Produk tetap dapat bekerja menggunakan baterai cadangan saat listrik padam."
+      },
+
+      {
+        "question": "Apakah bisa mengatur jadwal makan?",
+        "answer": "Ya. Jadwal makan dapat diatur sesuai tipe produk yang dipilih."
+      }
+
+    ]
+  }
+]
