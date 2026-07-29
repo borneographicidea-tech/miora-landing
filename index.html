@@ -112,7 +112,7 @@
         <h2>Pilih Produk</h2>
 <div class="variant-list">
 
-    <div class="variant-card active">
+    <div class="variant-card active" data-variant-id="101">
 
         <span class="variant-badge">
             Entry
@@ -124,7 +124,7 @@
 
     </div>
 
-    <div class="variant-card">
+    <div class="variant-card" data-variant-id="102">
 
         <span class="variant-badge best">
             ⭐ Best Seller
@@ -136,7 +136,7 @@
 
     </div>
 
-    <div class="variant-card">
+    <div class="variant-card" data-variant-id="103">
 
         <span class="variant-badge premium">
             Premium
@@ -207,17 +207,27 @@ id="product-badge">
 
                 <div class="subtotal-box">
 
-                    <strong>Subtotal Produk</strong>
+    <strong>Subtotal Produk</strong>
 
-                    <h3 id="subtotal">
+    <h3 id="subtotal">
+        Rp589.000
+    </h3>
 
-Rp589.000
+    <small>Belum termasuk ongkir</small>
 
-</h3>
+</div>
 
-                    <small>Belum termasuk ongkir</small>
+<button id="add-to-cart" class="btn-primary">
+    Tambah ke Keranjang
+</button>
 
-                </div>
+<div class="cart-indicator">
+
+    🛒 Keranjang
+
+    <span id="cart-count">0</span>
+
+</div>
 
                 <a href="#order" class="btn-primary">
 
@@ -309,11 +319,32 @@ Rp589.000
 
             <h2>Form Pemesanan</h2>
 
-            <div class="order-placeholder">
+            <div id="cart-container">
 
-                Form Order
+    <div id="cart-items">
 
-            </div>
+        Keranjang kosong
+
+    </div>
+
+    <div class="cart-total">
+
+    <h3>
+        Total:
+        <span id="cart-total">
+            Rp0
+        </span>
+    </h3>
+
+    <button id="clear-cart">
+
+        Kosongkan Keranjang
+
+    </button>
+
+</div>
+
+</div>
 
         </div>
 
@@ -344,6 +375,7 @@ Rp589.000
     </footer>
 
     <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
 <script src="js/app.js"></script>
 
 </body>
