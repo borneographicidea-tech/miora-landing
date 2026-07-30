@@ -12,41 +12,7 @@ const addToCartBtn =
 let productData = null;
 let currentVariant = null;
 
-let cart = [];
 
-try {
-
-    const savedCart =
-        localStorage.getItem(
-            "miora_cart"
-        );
-
-    cart = savedCart
-        ? JSON.parse(savedCart)
-        : [];
-
-} catch (error) {
-
-    console.log(
-        "Cart reset otomatis"
-    );
-
-    localStorage.removeItem(
-        "miora_cart"
-    );
-
-    cart = [];
-
-}
-
-function saveCart() {
-
-    localStorage.setItem(
-        "miora_cart",
-        JSON.stringify(cart)
-    );
-
-}
 
 function formatPrice(price) {
 
@@ -62,12 +28,19 @@ function updateCartCounter() {
 
     if (!cartCount) return;
 
-    const totalQty =
-        cart.reduce(
-            (sum, item) =>
-                sum + item.qty,
-            0
-        );
+    const cart =
+    JSON.parse(
+        localStorage.getItem(
+            "miora_cart"
+        )
+    ) || [];
+
+const totalQty =
+    cart.reduce(
+        (sum, item) =>
+            sum + item.qty,
+        0
+    );
 
     cartCount.textContent =
         totalQty;
@@ -109,7 +82,11 @@ function renderVariant(variant) {
 function addToCart() {
 
     if (!currentVariant) return;
-console.log("Current Variant:", currentVariant);
+
+    let cart = JSON.parse(
+        localStorage.getItem("miora_cart")
+    ) || [];
+
     const existingItem =
         cart.find(
             item =>
@@ -143,9 +120,21 @@ console.log("Current Variant:", currentVariant);
 
     }
 
-    saveCart();
+    localStorage.setItem(
+        "miora_cart",
+        JSON.stringify(cart)
+    );
 
     updateCartCounter();
+
+    if (
+        typeof renderCart ===
+        "function"
+    ) {
+
+        renderCart();
+
+    }
 
     console.log(cart);
 

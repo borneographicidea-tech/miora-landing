@@ -47,6 +47,8 @@ function updateQty(index, change) {
 
     const cart = getCart();
 
+    if (!cart[index]) return;
+
     cart[index].qty += change;
 
     if (cart[index].qty <= 0) {
@@ -66,6 +68,8 @@ function updateQty(index, change) {
 function removeCartItem(index) {
 
     const cart = getCart();
+
+    if (!cart[index]) return;
 
     cart.splice(index, 1);
 
@@ -124,16 +128,19 @@ function renderCart() {
             "cart-total"
         );
 
-    if (!cartItems) return;
+    if (!cartItems || !cartTotal)
+        return;
 
     const cart = getCart();
 
     if (cart.length === 0) {
 
         cartItems.innerHTML = `
+
             <p>
                 Keranjang masih kosong
             </p>
+
         `;
 
         cartTotal.textContent =
@@ -156,41 +163,45 @@ function renderCart() {
 
         html += `
 
-    <div class="cart-item">
+            <div class="cart-item">
 
-        <h4>
-            ${item.variantName}
-        </h4>
+                <h4>
+                    ${item.variantName}
+                </h4>
 
-        <p>
-            Qty : ${item.qty}
-        </p>
+                <p>
+                    ${formatCartPrice(subtotal)}
+                </p>
 
-        <p>
-            ${formatCartPrice(subtotal)}
-        </p>
+                <div class="cart-actions">
 
-        <div class="cart-actions">
+                    <button
+                        class="qty-btn"
+                        onclick="updateQty(${index}, -1)">
+                        -
+                    </button>
 
-            <button onclick="updateQty(${index}, -1)">
-                -
-            </button>
+                    <span class="qty-value">
+                        ${item.qty}
+                    </span>
 
-            <button onclick="updateQty(${index}, 1)">
-                +
-            </button>
+                    <button
+                        class="qty-btn"
+                        onclick="updateQty(${index}, 1)">
+                        +
+                    </button>
 
-            <button onclick="removeCartItem(${index})">
-                Hapus
-            </button>
+                    <button
+                        class="delete-btn"
+                        onclick="removeCartItem(${index})">
+                        Hapus
+                    </button>
 
-        </div>
+                </div>
 
-    </div>
+            </div>
 
-    <hr>
-
-`;
+        `;
 
     });
 
@@ -202,22 +213,27 @@ function renderCart() {
 
 }
 
-document
-    .getElementById(
-        "clear-cart"
-    )
-    ?.addEventListener(
-        "click",
-        clearCart
-    );
-
 window.addEventListener(
-    "load",
+    "DOMContentLoaded",
     () => {
 
         renderCart();
 
         updateCartCounterUI();
+
+        const clearBtn =
+            document.getElementById(
+                "clear-cart"
+            );
+
+        if (clearBtn) {
+
+            clearBtn.addEventListener(
+                "click",
+                clearCart
+            );
+
+        }
 
     }
 );
