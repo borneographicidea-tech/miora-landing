@@ -453,3 +453,180 @@ VARIANT CARD
 #clear-cart:hover{
     background:#666;
 }
+.customer-form{
+
+    margin-top:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.customer-form input,
+.customer-form textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #333;
+
+    border-radius:10px;
+
+    background:#151515;
+
+    color:#fff;
+
+}
+
+.customer-form textarea{
+
+    resize:vertical;
+
+}
+
+#checkout-btn{
+
+    width:100%;
+
+}
+.order-header{
+    margin-bottom:20px;
+}
+
+.order-header h3{
+    color:#ffffff;
+    margin-bottom:6px;
+}
+
+.order-header p{
+    color:#999999;
+    font-size:14px;
+}
+
+.cart-total{
+    text-align:center;
+}
+
+.cart-total small{
+    display:block;
+    color:#999999;
+    letter-spacing:2px;
+    margin-bottom:6px;
+}
+
+.cart-total h3{
+    font-size:36px;
+    font-weight:700;
+    color:#d4af37;
+    margin-bottom:16px;
+}
+
+.customer-form{
+    margin-top:40px;
+    padding:25px;
+    background:#151515;
+    border:1px solid #2b2b2b;
+    border-radius:18px;
+}
+
+.customer-form h3{
+    margin-bottom:20px;
+}
+
+.customer-form input,
+.customer-form textarea{
+    width:100%;
+    margin-bottom:12px;
+    padding:14px;
+    border:1px solid #2b2b2b;
+    border-radius:12px;
+    background:#0f0f0f;
+    color:#ffffff;
+}
+
+.customer-form input:focus,
+.customer-form textarea:focus{
+    outline:none;
+    border-color:#d4af37;
+}
+
+#checkout-btn{
+    width:100%;
+    margin-top:10px;
+}
+/* FAQ */
+
+.faq-list{
+
+    margin-top:30px;
+
+}
+
+.faq-item{
+
+    background:#151515;
+    border:1px solid #2b2b2b;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    margin-bottom:15px;
+
+}
+
+.faq-item h4{
+
+    color:#d4af37;
+
+    margin-bottom:10px;
+
+}
+
+.faq-item p{
+
+    color:#cccccc;
+
+    line-height:1.7;
+
+}
+
+/* TRUST BADGE */
+
+.trust-badges{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(250px,1fr)
+        );
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+.trust-item{
+
+    background:#151515;
+
+    border:1px solid #2b2b2b;
+
+    border-radius:14px;
+
+    padding:18px;
+
+    text-align:center;
+
+    color:#d4af37;
+
+    font-weight:600;
+
+}

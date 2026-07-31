@@ -297,58 +297,206 @@ id="product-badge">
 
     <!-- FAQ -->
 
-    <section id="faq">
+<section id="faq">
 
-        <div class="container">
+    <div class="container">
 
-            <h2>Pertanyaan Umum</h2>
+        <h2>
+            Pertanyaan Umum
+        </h2>
 
-            <p>
-                FAQ akan ditambahkan pada sprint berikutnya.
-            </p>
+        <div class="faq-list">
+
+            <div class="faq-item">
+
+                <h4>
+                    Apakah produk ini hanya untuk kucing?
+                </h4>
+
+                <p>
+                    Tidak. Smart Pet Feeder dapat digunakan
+                    untuk kucing maupun anjing ras kecil.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h4>
+                    Apakah makanan bisa dijadwalkan otomatis?
+                </h4>
+
+                <p>
+                    Ya. Setiap varian memiliki fitur
+                    penjadwalan makan otomatis.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h4>
+                    Apakah makanan tetap aman di dalam wadah?
+                </h4>
+
+                <p>
+                    Ya. Wadah penyimpanan dirancang untuk
+                    membantu menjaga makanan tetap bersih
+                    dan kering.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h4>
+                    Apakah bisa dikirim ke seluruh Indonesia?
+                </h4>
+
+                <p>
+                    Bisa. Pengiriman dilakukan sesuai
+                    ketersediaan stok dan area tujuan.
+                </p>
+
+            </div>
+
+            <div class="faq-item">
+
+                <h4>
+                    Apakah ada panduan penggunaan?
+                </h4>
+
+                <p>
+                    Ya. Admin akan membantu memberikan
+                    panduan penggunaan setelah pembelian.
+                </p>
+
+            </div>
 
         </div>
 
-    </section>
+        <div class="trust-badges">
 
+            <div class="trust-item">
+
+                ✓ Cocok untuk Kucing &
+                Anjing Ras Kecil
+
+            </div>
+
+            <div class="trust-item">
+
+                ✓ Pengiriman Seluruh Indonesia
+
+            </div>
+
+            <div class="trust-item">
+
+                ✓ Dukungan Admin via WhatsApp
+
+            </div>
+
+            <div class="trust-item">
+
+                ✓ Panduan Penggunaan Disediakan
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- ORDER -->
 
     <section id="order">
 
-        <div class="container">
+    <div class="container">
 
-            <h2>Form Pemesanan</h2>
+        <h2>Form Pemesanan</h2>
 
-            <div id="cart-container">
+        <div id="cart-container">
 
-    <div id="cart-items">
+            <div class="order-header">
 
-        Keranjang kosong
+                <h3>Ringkasan Pesanan</h3>
 
-    </div>
+                <p>
+                    Periksa kembali pesananmu sebelum checkout.
+                </p>
 
-    <div class="cart-total">
+            </div>
 
-    <h3>
-        Total:
-        <span id="cart-total">
-            Rp0
-        </span>
-    </h3>
+            <div id="cart-items">
 
-    <button id="clear-cart">
+                Keranjang kosong
 
-        Kosongkan Keranjang
+            </div>
 
-    </button>
+            <div class="cart-total">
 
-</div>
+                <small>
+                    TOTAL BELANJA
+                </small>
 
-</div>
+                <h3 id="cart-total">
+
+                    Rp0
+
+                </h3>
+
+                <button id="clear-cart">
+
+                    Kosongkan Keranjang
+
+                </button>
+
+            </div>
 
         </div>
 
-    </section>
+        <div class="customer-form">
+
+            <h3>Data Pemesan</h3>
+
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Nama Lengkap">
+
+            <input
+                type="text"
+                id="customer-phone"
+                placeholder="Nomor WhatsApp">
+
+            <input
+                type="text"
+                id="customer-province"
+                placeholder="Provinsi">
+
+            <input
+                type="text"
+                id="customer-city"
+                placeholder="Kota / Kabupaten">
+
+            <textarea
+                id="customer-address"
+                rows="4"
+                placeholder="Alamat Lengkap"></textarea>
+
+            <button
+                id="checkout-btn"
+                class="btn-primary">
+
+                Kirim Pesanan via WhatsApp
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- FOOTER -->
 
@@ -375,7 +523,8 @@ id="product-badge">
     </footer>
 
     <script src="js/product.js"></script>
-    <script src="js/cart.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/customer.js"></script>
 <script src="js/app.js"></script>
 
 </body>
