@@ -93,26 +93,33 @@ function clearCart() {
 
 }
 
-function updateCartCounterUI() {
+function updateCartCounterUI(){
 
-    const counter =
-        document.getElementById(
-            "cart-count"
-        );
-
-    if (!counter) return;
-
-    const cart = getCart();
+    const cart =
+        JSON.parse(
+            localStorage.getItem(
+                "miora_cart"
+            )
+        ) || [];
 
     const totalQty =
         cart.reduce(
-            (sum, item) =>
+            (sum,item)=>
                 sum + item.qty,
             0
         );
 
-    counter.textContent =
-        totalQty;
+    const counter =
+        document.getElementById(
+            "cart-counter"
+        );
+
+    if(counter){
+
+        counter.textContent =
+            totalQty;
+
+    }
 
 }
 
@@ -231,6 +238,38 @@ window.addEventListener(
             clearBtn.addEventListener(
                 "click",
                 clearCart
+            );
+
+        }
+
+    }
+);
+window.addEventListener(
+    "load",
+    () => {
+
+        const floatingCart =
+            document.getElementById(
+                "floating-cart"
+            );
+
+        if(floatingCart){
+
+            floatingCart.addEventListener(
+                "click",
+                () => {
+
+                    document
+                        .getElementById(
+                            "order"
+                        )
+                        ?.scrollIntoView({
+
+                            behavior:"smooth"
+
+                        });
+
+                }
             );
 
         }

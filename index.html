@@ -21,35 +21,61 @@
 
     <!-- HERO -->
 
-    <section id="hero">
+    <section class="hero">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="hero-content">
+        <img
+            src="assets/images/brand/miora-logo.png"
+            alt="MIORA Logo"
+            class="hero-logo">
 
-                <h1>Tenang,<br>Meski Kamu Jauh.</h1>
+        <p class="hero-tagline">
 
-                <p>
-                    Produk pilihan untuk membantu memastikan
-                    kucing kesayangan tetap mendapatkan
-                    makanan tepat waktu.
-                </p>
+            Premium Smart Pet Care
 
-                <a href="#product" class="btn-primary">
-                    Lihat Produk
-                </a>
+        </p>
 
-            </div>
+        <video
+    class="hero-video-player"
+    controls
+    loop
+    playsinline>
 
-            <div class="hero-video">
+    <source
+        src="assets/videos/video-hero.mp4"
+        type="video/mp4">
 
-                VIDEO PRODUK
+</video>
 
-            </div>
+        <h1>
 
-        </div>
+            Tenang,<br>
+            Meski Kamu Jauh.
 
-    </section>
+        </h1>
+
+        <p>
+
+            Produk pilihan untuk membantu memastikan
+            kucing kesayangan tetap mendapatkan
+            makanan tepat waktu meskipun kamu
+            sedang bekerja, bepergian,
+            atau berlibur.
+
+        </p>
+
+        <a
+            href="#product"
+            class="btn-primary">
+
+            Lihat Produk
+
+        </a>
+
+    </div>
+
+</section>
 
     <!-- PROBLEM -->
 
@@ -408,7 +434,39 @@
 <script src="js/customer.js"></script>
 <script src="js/checkout.js"></script>
 <script src="js/app.js"></script>
+<button id="floating-cart">
 
+    🛒 Keranjang
+    <span id="cart-counter">0</span>
+
+</button>
+<div id="lightbox" class="lightbox">
+
+    <span id="lightbox-close">
+        ×
+    </span>
+
+    <button id="lightbox-prev">
+        ❮
+    </button>
+
+    <img
+    id="lightbox-image"
+    src=""
+    alt="">
+
+<div id="lightbox-counter">
+
+    1 / 1
+
+</div>
+
+    <button id="lightbox-next">
+        ❯
+    </button>
+
+</div>
 </body>
+<script src="js/lightbox.js"></script>
 
 </html>
