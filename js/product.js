@@ -1,142 +1,10 @@
-const variantCards = document.querySelectorAll(".variant-card");
-
-const variantName = document.getElementById("variant-name");
-const productPrice = document.getElementById("product-price");
-const productBadge = document.getElementById("product-badge");
-const featureList = document.getElementById("feature-list");
-const subtotal = document.getElementById("subtotal");
-
-const addToCartBtn =
-    document.getElementById("add-to-cart");
-
-let productData = null;
-let currentVariant = null;
-
-
+const productList =
+    document.getElementById("product-list");
 
 function formatPrice(price) {
 
     return "Rp" +
         price.toLocaleString("id-ID");
-
-}
-
-function updateCartCounter() {
-
-    const cartCount =
-        document.getElementById("cart-count");
-
-    if (!cartCount) return;
-
-    const cart =
-    JSON.parse(
-        localStorage.getItem(
-            "miora_cart"
-        )
-    ) || [];
-
-const totalQty =
-    cart.reduce(
-        (sum, item) =>
-            sum + item.qty,
-        0
-    );
-
-    cartCount.textContent =
-        totalQty;
-
-}
-
-function renderVariant(variant) {
-
-    currentVariant = variant;
-
-    variantName.textContent =
-        variant.name;
-
-    productPrice.textContent =
-        formatPrice(variant.price);
-
-    subtotal.textContent =
-        formatPrice(variant.price);
-
-    productBadge.textContent =
-        variant.badge;
-
-    featureList.innerHTML = "";
-
-    variant.features.forEach(feature => {
-
-        const li =
-            document.createElement("li");
-
-        li.textContent =
-            feature;
-
-        featureList.appendChild(li);
-
-    });
-
-}
-
-function addToCart() {
-
-    if (!currentVariant) return;
-
-    let cart = JSON.parse(
-        localStorage.getItem("miora_cart")
-    ) || [];
-
-    const existingItem =
-        cart.find(
-            item =>
-                item.variantId ===
-                currentVariant.id
-        );
-
-    if (existingItem) {
-
-        existingItem.qty += 1;
-
-    } else {
-
-        cart.push({
-
-            productId:
-                productData.id,
-
-            variantId:
-                currentVariant.id,
-
-            variantName:
-                currentVariant.name,
-
-            price:
-                currentVariant.price,
-
-            qty: 1
-
-        });
-
-    }
-
-    localStorage.setItem(
-        "miora_cart",
-        JSON.stringify(cart)
-    );
-
-    updateCartCounter();
-
-    if (
-        typeof renderCart ===
-        "function"
-    ) {
-
-        renderCart();
-
-    }
-
-    console.log(cart);
 
 }
 
@@ -150,72 +18,213 @@ async function loadProducts() {
     const products =
         await response.json();
 
-    productData =
-        products[0];
-
-    renderVariant(
-        productData.variants[0]
-    );
+    renderProducts(products);
 
 }
 
-variantCards.forEach(card => {
+function renderProducts(products) {
 
-    card.addEventListener("click", () => {
-        console.log("KLIK TERDETEKSI");
+    productList.innerHTML = "";
 
-        variantCards.forEach(item => {
+    products.forEach(product => {
 
-            item.classList.remove(
-                "active"
+        const card =
+            document.createElement("div");
+
+        card.className =
+            "catalog-card";
+
+        card.innerHTML = `
+
+            <div class="catalog-image">
+
+                <img
+                    src="${product.image}"
+                    alt="${product.name}">
+
+            </div>
+
+            <div class="catalog-info">
+
+                <span class="badge">
+                    ${product.badge}
+                </span>
+
+                <h3>
+                    ${product.name}
+                </h3>
+
+                <h2>
+                    ${formatPrice(product.price)}
+                </h2>
+
+                <ul>
+
+                    ${product.features
+                        .map(
+                            feature =>
+                                `<li>${feature}</li>`
+                        )
+                        .join("")}
+
+                </ul>
+
+                <button
+                    class="btn-primary add-cart"
+                    data-id="${product.id}">
+
+                    Tambah ke Keranjang
+
+                </button>
+
+            </div>
+
+            <div class="gallery-section">
+
+                <h4>Foto Produk</h4>
+
+                <div class="gallery-grid">
+
+                    ${(product.productGallery || [])
+                        .map(
+                            image =>
+                                `<img src="${image}" alt="">`
+                        )
+                        .join("")}
+
+                </div>
+
+            </div>
+
+            <div class="gallery-section">
+
+                <h4>Fitur Produk</h4>
+
+                <div class="gallery-grid">
+
+                    ${(product.featureGallery || [])
+                        .map(
+                            image =>
+                                `<img src="${image}" alt="">`
+                        )
+                        .join("")}
+
+                </div>
+
+            </div>
+
+            <div class="gallery-section">
+
+                <h4>Lifestyle</h4>
+
+                <div class="gallery-grid">
+
+                    ${(product.lifestyleGallery || [])
+                        .map(
+                            image =>
+                                `<img src="${image}" alt="">`
+                        )
+                        .join("")}
+
+                </div>
+
+            </div>
+
+        `;
+
+        productList.appendChild(card);
+
+    });
+
+    document
+        .querySelectorAll(".add-cart")
+        .forEach(button => {
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    const productId =
+                        Number(
+                            button.dataset.id
+                        );
+
+                    const product =
+                        products.find(
+                            item =>
+                                item.id ===
+                                productId
+                        );
+
+                    let cart =
+                        JSON.parse(
+                            localStorage.getItem(
+                                "miora_cart"
+                            )
+                        ) || [];
+
+                    const existing =
+                        cart.find(
+                            item =>
+                                item.id ===
+                                productId
+                        );
+
+                    if (existing) {
+
+                        existing.qty++;
+
+                    } else {
+
+                        cart.push({
+
+                            id:
+                                product.id,
+
+                            name:
+                                product.name,
+
+                            price:
+                                product.price,
+
+                            qty: 1
+
+                        });
+
+                    }
+
+                    localStorage.setItem(
+                        "miora_cart",
+                        JSON.stringify(cart)
+                    );
+
+                    console.log(
+                        "Produk masuk keranjang"
+                    );
+
+                    if (
+                        typeof updateCartCounterUI ===
+                        "function"
+                    ) {
+
+                        updateCartCounterUI();
+
+                    }
+
+                    if (
+                        typeof renderCart ===
+                        "function"
+                    ) {
+
+                        renderCart();
+
+                    }
+
+                }
             );
 
         });
 
-        card.classList.add("active");
-
-        const variantId =
-            Number(
-                card.dataset.variantId
-            );
-            console.log("Variant ID:", variantId);
-
-        const selectedVariant =
-            productData.variants.find(
-                item =>
-                    item.id ===
-                    variantId
-            );
-            console.log(
-    "Selected:",
-    selectedVariant
-);
-
-        renderVariant(
-            selectedVariant
-        );
-
-    });
-
-});
-
-if (addToCartBtn) {
-
-    addToCartBtn.addEventListener(
-        "click",
-        addToCart
-    );
-
 }
 
-updateCartCounter();
-
 loadProducts();
-window.addEventListener(
-    "load",
-    () => {
-
-        updateCartCounter();
-
-    }
-);

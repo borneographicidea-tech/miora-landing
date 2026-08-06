@@ -630,3 +630,35 @@ VARIANT CARD
     font-weight:600;
 
 }
+.catalog-image {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.catalog-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+.gallery-section{
+    margin-top:24px;
+}
+
+.gallery-section h4{
+    margin-bottom:12px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(160px,1fr));
+    gap:12px;
+}
+
+.gallery-grid img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}

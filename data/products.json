@@ -1,79 +1,41 @@
 [
   {
-    "id": 1,
-    "slug": "smart-pet-feeder",
-    "category": "Automatic Feeder",
-    "productName": "Smart Pet Feeder",
-    "tagline": "Tenang, Meski Kamu Jauh.",
-    "heroVideo": "assets/videos/smart-feeder.mp4",
-    "description": "Smart Pet Feeder membantu memberikan makanan secara terjadwal sehingga kucing tetap mendapatkan pakan tepat waktu meskipun kamu sedang bekerja, bepergian, atau berlibur.",
-    "gallery": [
-      "assets/images/gallery/gallery-01.jpg",
-      "assets/images/gallery/gallery-02.jpg",
-      "assets/images/gallery/gallery-03.jpg"
-    ],
-    "benefits": [
-      "Jadwal makan lebih teratur",
-      "Mengurangi rasa khawatir saat meninggalkan rumah",
-      "Praktis digunakan setiap hari"
-    ],
-    "variants": [
-      {
-        "id": 101,
-        "name": "TEST BRO",
-        "price": 578000,
-        "badge": "Entry Smart Series",
-        "image": "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/hero.jpg",
-        "recommended": false,
-        "stock": true,
-        "features": [
-          "Kontrol via aplikasi",
-          "Jadwal makan otomatis",
-          "Pemberian makan manual via aplikasi",
-          "Kapasitas 5 Liter",
-          "Backup baterai",
-          "Mangkuk stainless steel"
-        ]
-      },
+    "id": 101,
+    "name": "MIORA Smart Feeder 5L",
+    "price": 578000,
+    "badge": "Best Seller",
+    "image": "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/hero.jpg",
+    "recommended": true,
+    "stock": true,
 
-      {
-        "id": 102,
-        "name": "5 Liter WiFi",
-        "price": 589000,
-        "badge": "Best Seller",
-        "image": "assets/images/products/5-liter-wifi.png",
-        "recommended": true,
-        "stock": true,
-        "features": [
-          "WiFi Control",
-          "Jadwal via Aplikasi",
-          "Kapasitas 5 Liter"
-        ]
-      },
-      {
-        "id": 103,
-        "name": "5 Liter Camera",
-        "price": 699000,
-        "badge": "Premium",
-        "image": "assets/images/products/5-liter-camera.png",
-        "recommended": false,
-        "stock": true,
-        "features": [
-          "Live Camera",
-          "WiFi",
-          "Voice Interaction"
-        ]
-      }
+    "features": [
+      "Kapasitas 5 Liter",
+      "Mangkuk stainless steel",
+      "Kontrol via aplikasi",
+      "Jadwal makan otomatis",
+      "Backup baterai",
+      "Pemberian makan manual via aplikasi"
     ],
-    "faq": [
-      {
-        "question": "Apakah bisa menggunakan baterai?",
-        "answer": "Ya. Produk tetap dapat bekerja menggunakan baterai cadangan saat listrik padam."
-      },
-      {
-        "question": "Apakah bisa mengatur jadwal makan?",
-        "answer": "Ya. Jadwal makan dapat diatur sesuai tipe produk yang dipilih."
-      }
+
+    "productGallery": [
+      "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/hero.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/angle-01.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/angle-02.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/angle-03.jpg"
+    ],
+
+    "featureGallery": [
+      "assets/images/products/FEEDER-5L-SINGLE/FEATURE/feature-01.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/FEATURE/feature-02.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/FEATURE/feature-03.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/FEATURE/feature-04.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/FEATURE/feature-05.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/FEATURE/feature-06.jpg"
+    ],
+
+    "lifestyleGallery": [
+      "assets/images/products/FEEDER-5L-SINGLE/LIFESTYLE/cat-eating.jpg",
+      "assets/images/products/FEEDER-5L-SINGLE/LIFESTYLE/cat-home.jpg"
     ]
   }
 ]
