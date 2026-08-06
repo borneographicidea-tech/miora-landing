@@ -222,11 +222,12 @@
     ],
 
     "featureGallery": [
-      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-01.jpg",
-      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-02.jpg",
-      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-03.jpg",
-      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-04.jpg"
-    ],
+  "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-01.jpg",
+  "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-02.jpg",
+  "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-03.jpg",
+  "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-04.jpg",
+  "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-05.jpg"
+],
 
     "lifestyleGallery": [
       "assets/images/products/WATER-FOUNTAIN/LIFESTYLE/cat-drink.jpg",
