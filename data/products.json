@@ -1,24 +1,32 @@
 [
   {
     "id": 101,
-    "name": "MIORA Smart Feeder 5L",
+    "name": "MIORA Smart Feeder 5L Single Bowl",
+    "series": "Entry Smart Series",
+    "badge": "Entry Series",
     "price": 578000,
-    "badge": "Best Seller",
     "image": "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/hero.jpg",
-    "recommended": true,
-    "stock": true,
+
+    "shortDescription": "Smart feeder dengan kapasitas besar 5 liter yang membantu memastikan anabul tetap mendapatkan makanan tepat waktu. Cocok untuk pemilik 1 kucing yang menginginkan solusi otomatis dengan harga lebih terjangkau.",
 
     "features": [
-      "Kapasitas 5 Liter",
-      "Mangkuk stainless steel",
       "Kontrol via aplikasi",
       "Jadwal makan otomatis",
+      "Pemberian makan manual via aplikasi",
+      "Kapasitas 5 Liter",
       "Backup baterai",
-      "Pemberian makan manual via aplikasi"
+      "Mangkuk stainless steel"
+    ],
+
+    "specifications": [
+      "Kapasitas: 5 Liter",
+      "WiFi",
+      "1 Mangkuk",
+      "Mangkuk Stainless Steel",
+      "Dry Food 2-12 mm"
     ],
 
     "productGallery": [
-      "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/hero.jpg",
       "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/angle-01.jpg",
       "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/angle-02.jpg",
       "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/angle-03.jpg"
@@ -36,6 +44,242 @@
     "lifestyleGallery": [
       "assets/images/products/FEEDER-5L-SINGLE/LIFESTYLE/cat-eating.jpg",
       "assets/images/products/FEEDER-5L-SINGLE/LIFESTYLE/cat-home.jpg"
+    ]
+  },
+
+  {
+    "id": 102,
+    "name": "MIORA Smart Feeder 5L Dual Bowl",
+    "series": "Best Seller Series",
+    "badge": "⭐ Best Seller",
+    "price": 639000,
+    "image": "assets/images/products/FEEDER-5L-DUAL/PRODUCT/hero.jpg",
+
+    "shortDescription": "Solusi ideal untuk rumah dengan lebih dari satu kucing. Kapasitas besar dan dua mangkuk membantu distribusi makanan lebih praktis.",
+
+    "features": [
+      "Kontrol via aplikasi",
+      "Dual Bowl",
+      "Jadwal otomatis",
+      "Kapasitas 5 Liter",
+      "Backup baterai",
+      "Mangkuk stainless steel"
+    ],
+
+    "specifications": [
+      "Kapasitas: 5 Liter",
+      "WiFi",
+      "2 Mangkuk",
+      "Mangkuk Stainless Steel",
+      "Dry Food 2-12 mm"
+    ],
+
+    "productGallery": [
+      "assets/images/products/FEEDER-5L-DUAL/PRODUCT/angle-01.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/PRODUCT/angle-02.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/PRODUCT/angle-03.jpg"
+    ],
+
+    "featureGallery": [
+      "assets/images/products/FEEDER-5L-DUAL/FEATURE/feature-01.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/FEATURE/feature-02.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/FEATURE/feature-03.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/FEATURE/feature-04.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/FEATURE/feature-05.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/FEATURE/feature-06.jpg"
+    ],
+
+    "lifestyleGallery": [
+      "assets/images/products/FEEDER-5L-DUAL/LIFESTYLE/catdog-home.jpg",
+      "assets/images/products/FEEDER-5L-DUAL/LIFESTYLE/twocat-eating.jpg"
+    ]
+  },
+
+  {
+    "id": 103,
+    "name": "MIORA Smart Feeder 4L Camera & Voice",
+    "series": "Premium Capacity Series",
+    "badge": "Premium Capacity",
+    "price": 599000,
+    "image": "assets/images/products/FEEDER-4L-CAMERA/PRODUCT/hero.jpg",
+
+    "shortDescription": "Menggabungkan fitur pemantauan jarak jauh dengan kapasitas lebih besar. Cocok untuk cat parent yang menginginkan kamera dan frekuensi isi ulang yang lebih jarang.",
+
+    "features": [
+      "Kamera HD",
+      "Night Vision",
+      "Audio dua arah",
+      "Rekam suara",
+      "Jadwal hingga 24x per hari",
+      "Sistem anti macet"
+    ],
+
+    "specifications": [
+      "Kapasitas: 4 Liter",
+      "WiFi",
+      "Kamera HD",
+      "Night Vision",
+      "Audio Dua Arah",
+      "Slot baterai cadangan"
+    ],
+
+    "productGallery": [
+      "assets/images/products/FEEDER-4L-CAMERA/PRODUCT/angle-01.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/PRODUCT/angle-02.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/PRODUCT/angle-03.jpg"
+    ],
+
+    "featureGallery": [
+      "assets/images/products/FEEDER-4L-CAMERA/FEATURE/feature-01.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/FEATURE/feature-02.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/FEATURE/feature-03.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/FEATURE/feature-04.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/FEATURE/feature-05.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/FEATURE/feature-06.jpg"
+    ],
+
+    "lifestyleGallery": [
+      "assets/images/products/FEEDER-4L-CAMERA/LIFESTYLE/cat-eating.jpg",
+      "assets/images/products/FEEDER-4L-CAMERA/LIFESTYLE/owner-monitoring.jpg"
+    ]
+  },
+
+  {
+    "id": 104,
+    "name": "MIORA Smart Feeder 3L Camera & Voice",
+    "series": "Compact Premium Series",
+    "badge": "Compact Premium",
+    "price": 678000,
+    "image": "assets/images/products/FEEDER-3L-CAMERA/PRODUCT/hero.jpg",
+
+    "shortDescription": "Feeder pintar dengan kamera HD 1080P dan komunikasi suara dua arah dalam desain yang lebih ringkas. Cocok untuk pemilik 1 kucing yang ingin tetap terhubung dengan anabul dari mana saja.",
+
+    "features": [
+      "Kamera 1080P HD",
+      "Night Vision",
+      "Audio dua arah",
+      "Rekam suara 10 detik",
+      "Kontrol aplikasi",
+      "Mangkuk Stainless Steel 304"
+    ],
+
+    "specifications": [
+      "Kapasitas: 3 Liter",
+      "WiFi",
+      "Kamera 1080P",
+      "Night Vision",
+      "Audio Dua Arah",
+      "4x Baterai AA"
+    ],
+
+    "productGallery": [
+      "assets/images/products/FEEDER-3L-CAMERA/PRODUCT/angle-01.jpg",
+      "assets/images/products/FEEDER-3L-CAMERA/PRODUCT/angle-02.jpg"
+    ],
+
+    "featureGallery": [
+      "assets/images/products/FEEDER-3L-CAMERA/FEATURE/feature-01.jpg",
+      "assets/images/products/FEEDER-3L-CAMERA/FEATURE/feature-02.jpg",
+      "assets/images/products/FEEDER-3L-CAMERA/FEATURE/feature-03.jpg",
+      "assets/images/products/FEEDER-3L-CAMERA/FEATURE/feature-04.jpg",
+      "assets/images/products/FEEDER-3L-CAMERA/FEATURE/feature-05.jpg"
+    ],
+
+    "lifestyleGallery": [
+      "assets/images/products/FEEDER-3L-CAMERA/LIFESTYLE/cat-eating.jpg",
+      "assets/images/products/FEEDER-3L-CAMERA/LIFESTYLE/owner-monitoring.jpg"
+    ]
+  },
+
+  {
+    "id": 105,
+    "name": "MIORA Water Fountain 3L",
+    "series": "Essential Care Series",
+    "badge": "Essential Care Series",
+    "price": 278000,
+    "image": "assets/images/products/WATER-FOUNTAIN/PRODUCT/hero.jpg",
+
+    "shortDescription": "Dispenser air minum otomatis yang membantu menjaga ketersediaan air bersih dan segar untuk anabul sepanjang hari.",
+
+    "features": [
+      "Kapasitas 3 Liter",
+      "Sirkulasi air otomatis",
+      "Sistem filtrasi",
+      "Pompa senyap",
+      "Mudah dibersihkan"
+    ],
+
+    "specifications": [
+      "Kapasitas: 3 Liter",
+      "USB Power",
+      "Material PP Food Grade",
+      "Sistem Filtrasi Air"
+    ],
+
+    "productGallery": [
+      "assets/images/products/WATER-FOUNTAIN/PRODUCT/angle-01.jpg",
+      "assets/images/products/WATER-FOUNTAIN/PRODUCT/angle-02.jpg"
+    ],
+
+    "featureGallery": [
+      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-01.jpg",
+      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-02.jpg",
+      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-03.jpg",
+      "assets/images/products/WATER-FOUNTAIN/FEATURE/feature-04.jpg"
+    ],
+
+    "lifestyleGallery": [
+      "assets/images/products/WATER-FOUNTAIN/LIFESTYLE/cat-drink.jpg",
+      "assets/images/products/WATER-FOUNTAIN/LIFESTYLE/cat-sleep.jpg"
+    ]
+  },
+
+  {
+    "id": 106,
+    "name": "MIORA Smart Feeder 6L Dual Camera & Voice",
+    "series": "Flagship Series",
+    "badge": "👑 Flagship",
+    "price": 1458000,
+    "image": "assets/images/products/FEEDER-6L-DUALCAM/PRODUCT/hero.jpg",
+
+    "shortDescription": "Varian paling lengkap dalam lini MIORA dengan kapasitas besar, fitur pemantauan, dan komunikasi suara untuk ketenangan maksimal saat bepergian.",
+
+    "features": [
+      "Dual Camera",
+      "Night Vision",
+      "Audio dua arah",
+      "Kontrol aplikasi",
+      "Kapasitas 6 Liter",
+      "Mangkuk Stainless Steel"
+    ],
+
+    "specifications": [
+      "Kapasitas: 6 Liter",
+      "WiFi",
+      "Dual Camera",
+      "Night Vision",
+      "Audio Dua Arah",
+      "Dry Food 5-12 mm"
+    ],
+
+    "productGallery": [
+      "assets/images/products/FEEDER-6L-DUALCAM/PRODUCT/angle-01.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/PRODUCT/angle-02.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/PRODUCT/angle-03.jpg"
+    ],
+
+    "featureGallery": [
+      "assets/images/products/FEEDER-6L-DUALCAM/FEATURE/feature-01.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/FEATURE/feature-02.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/FEATURE/feature-03.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/FEATURE/feature-04.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/FEATURE/feature-05.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/FEATURE/feature-06.jpg"
+    ],
+
+    "lifestyleGallery": [
+      "assets/images/products/FEEDER-6L-DUALCAM/LIFESTYLE/cat-eating.jpg",
+      "assets/images/products/FEEDER-6L-DUALCAM/LIFESTYLE/owner-monitoring.jpg"
     ]
   }
 ]

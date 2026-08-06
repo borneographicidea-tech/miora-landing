@@ -58,12 +58,39 @@ function renderProducts(products) {
                     ${formatPrice(product.price)}
                 </h2>
 
+                <p class="product-series">
+                    ${product.series || ""}
+                </p>
+
+                <p class="product-description">
+    ${product.shortDescription || ""}
+</p>
+
+                <h4>
+                    Fitur Utama
+                </h4>
+
                 <ul>
 
-                    ${product.features
+                    ${(product.features || [])
                         .map(
                             feature =>
                                 `<li>${feature}</li>`
+                        )
+                        .join("")}
+
+                </ul>
+
+                <h4>
+                    Spesifikasi
+                </h4>
+
+                <ul>
+
+                    ${(product.specifications || [])
+                        .map(
+                            spec =>
+                                `<li>${spec}</li>`
                         )
                         .join("")}
 

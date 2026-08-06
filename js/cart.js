@@ -166,8 +166,8 @@ function renderCart() {
             <div class="cart-item">
 
                 <h4>
-                    ${item.variantName}
-                </h4>
+    ${item.name}
+</h4>
 
                 <p>
                     ${formatCartPrice(subtotal)}
