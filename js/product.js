@@ -217,6 +217,7 @@ function renderProducts(products) {
 
             modal.style.display =
                 "block";
+console.log("MODAL OPEN");
 
         }
     );

@@ -61,6 +61,8 @@ document.addEventListener(
             )
 
         ) {
+            event.preventDefault();
+event.stopPropagation();
 
             const currentGallery =
     event.target.closest(
@@ -87,6 +89,7 @@ galleryImages =
             lightbox.classList.add(
                 "active"
             );
+console.log("LIGHTBOX OPEN");
 
             updateCounter();
 
