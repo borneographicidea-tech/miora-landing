@@ -36,128 +36,61 @@ function renderProducts(products) {
 
         card.innerHTML = `
 
-            <div class="catalog-image">
+    <div class="catalog-image">
 
-                <img
-                    src="${product.image}"
-                    alt="${product.name}">
+        <img
+            src="${product.image}"
+            alt="${product.name}">
 
-            </div>
+    </div>
 
-            <div class="catalog-info">
+    <div class="catalog-info">
 
-                <span class="badge">
-                    ${product.badge}
-                </span>
+        <span class="badge">
+            ${product.badge}
+        </span>
 
-                <h3>
-                    ${product.name}
-                </h3>
+        <h3>
+            ${product.name}
+        </h3>
 
-                <h2>
-                    ${formatPrice(product.price)}
-                </h2>
+        <h2>
+            ${formatPrice(product.price)}
+        </h2>
 
-                <p class="product-series">
-                    ${product.series || ""}
-                </p>
+        <p class="product-series">
+            ${product.series || ""}
+        </p>
 
-                <p class="product-description">
-    ${product.shortDescription || ""}
-</p>
+        <p class="product-description">
+            ${product.shortDescription || ""}
+        </p>
 
-                <h4>
-                    Fitur Utama
-                </h4>
+        
 
-                <ul>
+        <div class="product-actions">
 
-                    ${(product.features || [])
-                        .map(
-                            feature =>
-                                `<li>${feature}</li>`
-                        )
-                        .join("")}
+    <button
+        class="btn-secondary view-detail"
+        data-id="${product.id}">
 
-                </ul>
+        Lihat Detail
 
-                <h4>
-                    Spesifikasi
-                </h4>
+    </button>
 
-                <ul>
+    <button
+        class="btn-primary add-cart"
+        data-id="${product.id}">
 
-                    ${(product.specifications || [])
-                        .map(
-                            spec =>
-                                `<li>${spec}</li>`
-                        )
-                        .join("")}
+        Tambah ke Keranjang
 
-                </ul>
+    </button>
 
-                <button
-                    class="btn-primary add-cart"
-                    data-id="${product.id}">
+</div>
 
-                    Tambah ke Keranjang
+    </div>
 
-                </button>
-
-            </div>
-
-            <div class="gallery-section">
-
-                <h4>Foto Produk</h4>
-
-                <div class="gallery-grid">
-
-                    ${(product.productGallery || [])
-                        .map(
-                            image =>
-                                `<img src="${image}" alt="">`
-                        )
-                        .join("")}
-
-                </div>
-
-            </div>
-
-            <div class="gallery-section">
-
-                <h4>Fitur Produk</h4>
-
-                <div class="gallery-grid">
-
-                    ${(product.featureGallery || [])
-                        .map(
-                            image =>
-                                `<img src="${image}" alt="">`
-                        )
-                        .join("")}
-
-                </div>
-
-            </div>
-
-            <div class="gallery-section">
-
-                <h4>Lifestyle</h4>
-
-                <div class="gallery-grid">
-
-                    ${(product.lifestyleGallery || [])
-                        .map(
-                            image =>
-                                `<img src="${image}" alt="">`
-                        )
-                        .join("")}
-
-                </div>
-
-            </div>
-
-        `;
+`;
 
         productList.appendChild(card);
 
@@ -166,7 +99,143 @@ function renderProducts(products) {
     document
         .querySelectorAll(".add-cart")
         .forEach(button => {
+    document
+.querySelectorAll(".view-detail")
+.forEach(button => {
 
+    button.addEventListener(
+        "click",
+        () => {
+
+            const productId =
+                Number(
+                    button.dataset.id
+                );
+
+            const product =
+                products.find(
+                    item =>
+                        item.id ===
+                        productId
+                );
+
+            const modal =
+                document.getElementById(
+                    "product-modal"
+                );
+
+            const modalBody =
+                document.getElementById(
+                    "modal-body"
+                );
+
+            modalBody.innerHTML = `
+
+    <h2>
+        ${product.name}
+    </h2>
+
+    <h3>
+        ${formatPrice(product.price)}
+    </h3>
+
+    <p>
+        ${product.shortDescription || ""}
+    </p>
+
+    <h4>
+        Fitur Utama
+    </h4>
+
+    <ul>
+
+        ${(product.features || [])
+            .map(
+                feature =>
+                    `<li>${feature}</li>`
+            )
+            .join("")}
+
+    </ul>
+<h4>
+    Spesifikasi
+</h4>
+
+<ul>
+
+    ${(product.specifications || [])
+        .map(
+            spec =>
+                `<li>${spec}</li>`
+        )
+        .join("")}
+
+</ul>
+<h4>
+    Foto Produk
+</h4>
+
+<div class="gallery-grid">
+
+    ${(product.productGallery || [])
+        .map(
+            image =>
+                `<img src="${image}" alt="">`
+        )
+        .join("")}
+
+</div>
+<h4>
+    Fitur Produk
+</h4>
+
+<div class="gallery-grid">
+
+    ${(product.featureGallery || [])
+        .map(
+            image =>
+                `<img src="${image}" alt="">`
+        )
+        .join("")}
+
+</div>
+<h4>
+    Lifestyle
+</h4>
+
+<div class="gallery-grid">
+
+    ${(product.lifestyleGallery || [])
+        .map(
+            image =>
+                `<img src="${image}" alt="">`
+        )
+        .join("")}
+
+</div>
+`;
+
+            modal.style.display =
+                "block";
+
+        }
+    );
+
+});
+
+document
+.getElementById("modal-close")
+.addEventListener(
+    "click",
+    () => {
+
+        document.getElementById(
+            "product-modal"
+        ).style.display =
+            "none";
+
+    }
+);
             button.addEventListener(
                 "click",
                 () => {
