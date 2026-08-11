@@ -216,7 +216,10 @@ function renderProducts(products) {
 `;
 
             modal.style.display =
-                "block";
+    "block";
+
+document.body.style.overflow =
+    "hidden";
 console.log("MODAL OPEN");
 
         }
@@ -231,9 +234,12 @@ document
     () => {
 
         document.getElementById(
-            "product-modal"
-        ).style.display =
-            "none";
+"product-modal"
+).style.display =
+"none";
+
+document.body.style.overflow =
+"";
 
     }
 );
