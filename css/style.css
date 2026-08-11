@@ -702,7 +702,18 @@ VARIANT CARD
 }
 
 .gallery-section h4{
+
     margin-bottom:12px;
+
+    color:#c9a54d;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    font-size:14px;
+
+    
 }
 
 .gallery-grid{
@@ -1002,9 +1013,11 @@ VARIANT CARD
 
     border-radius:20px;
 
-    padding:30px;
+    padding:40px;
 
     border:1px solid #2a2a2a;
+
+    box-shadow:0 0 30px rgba(0,0,0,.5);
 
 }
 
@@ -1017,5 +1030,46 @@ VARIANT CARD
     cursor:pointer;
 
     color:#c9a54d;
+
+}
+.catalog-info h4{
+
+    color:#c9a54d;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    font-size:14px;
+
+    margin-top:24px;
+
+    margin-bottom:12px;
+
+}
+#modal-body h4{
+
+    color:#c9a54d;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:13px;
+
+    margin-top:28px;
+
+    margin-bottom:12px;
+
+}
+.modal-price{
+
+    color:#c9a54d;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin:15px 0 20px;
 
 }

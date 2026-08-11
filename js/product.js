@@ -135,9 +135,9 @@ function renderProducts(products) {
         ${product.name}
     </h2>
 
-    <h3>
-        ${formatPrice(product.price)}
-    </h3>
+    <p class="modal-price">
+    ${formatPrice(product.price)}
+</p>
 
     <p>
         ${product.shortDescription || ""}
