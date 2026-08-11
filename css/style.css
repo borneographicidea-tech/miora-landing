@@ -1023,13 +1023,39 @@ VARIANT CARD
 
 #modal-close{
 
-    float:right;
+    position:sticky;
 
-    font-size:32px;
+    top:10px;
+
+    margin-left:auto;
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(0,0,0,.45);
+
+    border:1px solid rgba(201,165,77,.35);
+
+    color:#c9a54d;
+
+    font-size:26px;
 
     cursor:pointer;
 
-    color:#c9a54d;
+    z-index:100;
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:0 0 12px rgba(201,165,77,.15);
 
 }
 .catalog-info h4{
