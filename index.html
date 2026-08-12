@@ -14,7 +14,33 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
+fbq('init', '916332460939001');
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=916332460939001&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -140,6 +166,39 @@ bepergian, atau berlibur.
         <div id="product-list">
 
             <!-- Render otomatis dari products.json -->
+
+        </div>
+
+    </div>
+
+</section>
+<section id="testimonials">
+
+    <div class="container">
+
+        <h2>
+            Apa Kata Mereka
+        </h2>
+
+        <p class="testimonial-subtitle">
+
+            Cerita dari para pecinta kucing yang telah menggunakan produk pilihan MIORA.
+            
+        </p>
+
+        <div class="testimonial-grid">
+
+            <img
+                src="assets/images/testimonials/testimoni-1.jpg"
+                alt="Testimoni MIORA 1">
+
+            <img
+                src="assets/images/testimonials/testimoni-2.jpg"
+                alt="Testimoni MIORA 2">
+
+            <img
+                src="assets/images/testimonials/testimoni-3.jpg"
+                alt="Testimoni MIORA 3">
 
         </div>
 
