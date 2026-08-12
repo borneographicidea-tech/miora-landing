@@ -144,10 +144,18 @@ Mohon info ongkirnya.
 
 if (typeof fbq !== "undefined") {
 
+    console.log("FBQ EXISTS");
+
     fbq(
         'track',
         'Lead'
     );
+
+    console.log("LEAD SENT");
+
+} else {
+
+    console.log("FBQ NOT FOUND");
 
 }
 
