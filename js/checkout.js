@@ -142,10 +142,19 @@ Mohon info ongkirnya.
     const whatsappURL =
 `https://wa.me/6285754601987?text=${encodeURIComponent(message)}`;
 
-    window.open(
-        whatsappURL,
-        "_blank"
+if (typeof fbq !== "undefined") {
+
+    fbq(
+        'track',
+        'Lead'
     );
+
+}
+
+window.open(
+    whatsappURL,
+    "_blank"
+);
 
 }
 
