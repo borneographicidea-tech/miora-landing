@@ -304,6 +304,18 @@ document.body.style.overflow =
                     console.log(
                         "Produk masuk keranjang"
                     );
+                    console.log(
+    "Produk masuk keranjang"
+);
+
+if (typeof fbq !== "undefined") {
+
+    fbq(
+        'track',
+        'AddToCart'
+    );
+
+}
 
                     if (
                         typeof updateCartCounterUI ===
