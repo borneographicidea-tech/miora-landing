@@ -46,9 +46,6 @@ function renderProducts(products) {
 
     <div class="catalog-info">
 
-        <span class="badge">
-            ${product.badge}
-        </span>
 
         <h3>
             ${product.name}
