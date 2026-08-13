@@ -170,45 +170,55 @@ function renderCart() {
 
         html += `
 
-            <div class="cart-item">
+<div class="cart-item">
 
-                <h4>
-    ${item.name}
-</h4>
+    <div class="cart-thumb">
+        <img src="${item.image}" alt="${item.name}">
+    </div>
 
-                <p>
-                    ${formatCartPrice(subtotal)}
-                </p>
+    <div class="cart-content">
 
-                <div class="cart-actions">
+        <h4>${item.name}</h4>
 
-                    <button
-                        class="qty-btn"
-                        onclick="updateQty(${index}, -1)">
-                        -
-                    </button>
+        <p class="cart-price">
+            ${formatCartPrice(item.price)}
+        </p>
 
-                    <span class="qty-value">
-                        ${item.qty}
-                    </span>
+        <small class="cart-qty-info">
+            ${item.qty} pcs
+        </small>
 
-                    <button
-                        class="qty-btn"
-                        onclick="updateQty(${index}, 1)">
-                        +
-                    </button>
+        <div class="cart-actions">
 
-                    <button
-                        class="delete-btn"
-                        onclick="removeCartItem(${index})">
-                        Hapus
-                    </button>
+            <button
+                class="qty-btn"
+                onclick="updateQty(${index}, -1)">
+                -
+            </button>
 
-                </div>
+            <span class="qty-value">
+                ${item.qty}
+            </span>
 
-            </div>
+            <button
+                class="qty-btn"
+                onclick="updateQty(${index}, 1)">
+                +
+            </button>
 
-        `;
+            <button
+                class="delete-btn"
+                onclick="removeCartItem(${index})">
+                Hapus
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+`;
 
     });
 
@@ -261,7 +271,7 @@ window.addEventListener(
 
                     document
                         .getElementById(
-                            "order"
+                            "order-form"
                         )
                         ?.scrollIntoView({
 

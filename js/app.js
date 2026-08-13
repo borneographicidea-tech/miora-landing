@@ -10,7 +10,7 @@ if (floatingCart) {
         () => {
 
             document
-            .getElementById("order")
+            .getElementById("order-form")
             .scrollIntoView({
 
                 behavior:"smooth"

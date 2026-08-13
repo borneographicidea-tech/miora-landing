@@ -3,7 +3,6 @@
     "id": 101,
     "name": "MIORA Smart Feeder 5L Single Bowl",
     "series": "Entry Smart Series",
-    "badge": "Entry Series",
     "price": 578000,
     "image": "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/hero.jpg",
 
@@ -51,7 +50,6 @@
     "id": 102,
     "name": "MIORA Smart Feeder 5L Dual Bowl",
     "series": "Best Seller Series",
-    "badge": "⭐ Best Seller",
     "price": 639000,
     "image": "assets/images/products/FEEDER-5L-DUAL/PRODUCT/hero.jpg",
 
@@ -99,7 +97,6 @@
     "id": 103,
     "name": "MIORA Smart Feeder 4L Camera & Voice",
     "series": "Premium Capacity Series",
-    "badge": "Premium Capacity",
     "price": 599000,
     "image": "assets/images/products/FEEDER-4L-CAMERA/PRODUCT/hero.jpg",
 
@@ -148,7 +145,6 @@
     "id": 104,
     "name": "MIORA Smart Feeder 3L Camera & Voice",
     "series": "Compact Premium Series",
-    "badge": "Compact Premium",
     "price": 678000,
     "image": "assets/images/products/FEEDER-3L-CAMERA/PRODUCT/hero.jpg",
 
@@ -195,7 +191,6 @@
     "id": 105,
     "name": "MIORA Water Fountain 3L",
     "series": "Essential Care Series",
-    "badge": "Essential Care Series",
     "price": 278000,
     "image": "assets/images/products/WATER-FOUNTAIN/PRODUCT/hero.jpg",
 
@@ -239,7 +234,6 @@
     "id": 106,
     "name": "MIORA Smart Feeder 6L Dual Camera & Voice",
     "series": "Flagship Series",
-    "badge": "👑 Flagship",
     "price": 1458000,
     "image": "assets/images/products/FEEDER-6L-DUALCAM/PRODUCT/hero.jpg",
 

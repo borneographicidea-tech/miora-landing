@@ -224,22 +224,29 @@ console.log("MODAL OPEN");
 
 });
 
-document
-.getElementById("modal-close")
-.addEventListener(
-    "click",
-    () => {
-
-        document.getElementById(
-"product-modal"
-).style.display =
-"none";
-
-document.body.style.overflow =
-"";
-
-    }
+const modalClose =
+document.getElementById(
+    "modal-close"
 );
+
+if(modalClose){
+
+    modalClose.addEventListener(
+        "click",
+        () => {
+
+            document.getElementById(
+                "product-modal"
+            ).style.display =
+            "none";
+
+            document.body.style.overflow =
+            "";
+
+        }
+    );
+
+}
             button.addEventListener(
                 "click",
                 () => {
@@ -278,18 +285,21 @@ document.body.style.overflow =
 
                         cart.push({
 
-                            id:
-                                product.id,
+    id:
+        product.id,
 
-                            name:
-                                product.name,
+    name:
+        product.name,
 
-                            price:
-                                product.price,
+    price:
+        product.price,
 
-                            qty: 1
+    image:
+        product.image,
 
-                        });
+    qty: 1
+
+});
 
                     }
 
