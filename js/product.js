@@ -285,19 +285,18 @@ if(modalClose){
 
                         cart.push({
 
-    id:
-        product.id,
+    id: product.id,
 
-    name:
-        product.name,
+    name: product.name,
 
-    price:
-        product.price,
+    price: product.price,
 
-    image:
-        product.image,
+    image: product.image,
+
+    variantName: product.name,
 
     qty: 1
+
 
 });
 
@@ -350,3 +349,22 @@ if (typeof fbq !== "undefined") {
 }
 
 loadProducts();
+document
+.querySelectorAll(".faq-question")
+.forEach(question => {
+
+    question.addEventListener(
+        "click",
+        () => {
+
+            const item =
+                question.parentElement;
+
+            item.classList.toggle(
+                "active"
+            );
+
+        }
+    );
+
+});

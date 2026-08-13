@@ -142,20 +142,32 @@ function renderCart() {
 
     if (cart.length === 0) {
 
-        cartItems.innerHTML = `
+    cartItems.innerHTML = `
+
+        <div class="empty-cart">
+
+            <div class="empty-cart-icon">
+                🛒
+            </div>
+
+            <h4>
+                Keranjang Masih Kosong
+            </h4>
 
             <p>
-                Keranjang masih kosong
+                Pilih produk MIORA yang ingin kamu pesan.
             </p>
 
-        `;
+        </div>
 
-        cartTotal.textContent =
-            "Rp0";
+    `;
 
-        return;
+    cartTotal.textContent =
+        "Rp0";
 
-    }
+    return;
+
+}
 
     let html = "";
 
