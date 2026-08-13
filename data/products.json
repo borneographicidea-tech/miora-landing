@@ -1,7 +1,7 @@
 [
   {
     "id": 101,
-    "name": "MIORA Smart Feeder 5L Single Bowl",
+    "name": "MIORA Smart Feeder 5L",
     "series": "Entry Smart Series",
     "price": 578000,
     "image": "assets/images/products/FEEDER-5L-SINGLE/PRODUCT/hero.jpg",
@@ -48,7 +48,7 @@
 
   {
     "id": 102,
-    "name": "MIORA Smart Feeder 5L Dual Bowl",
+    "name": "MIORA Smart Feeder 5L Duo",
     "series": "Best Seller Series",
     "price": 639000,
     "image": "assets/images/products/FEEDER-5L-DUAL/PRODUCT/hero.jpg",
@@ -95,7 +95,7 @@
 
   {
     "id": 103,
-    "name": "MIORA Smart Feeder 4L Camera & Voice",
+    "name": "MIORA Smart Feeder 4L Pro",
     "series": "Premium Capacity Series",
     "price": 599000,
     "image": "assets/images/products/FEEDER-4L-CAMERA/PRODUCT/hero.jpg",
@@ -143,7 +143,7 @@
 
   {
     "id": 104,
-    "name": "MIORA Smart Feeder 3L Camera & Voice",
+    "name": "MIORA Smart Feeder 3L Pro",
     "series": "Compact Premium Series",
     "price": 678000,
     "image": "assets/images/products/FEEDER-3L-CAMERA/PRODUCT/hero.jpg",
@@ -232,7 +232,7 @@
 
   {
     "id": 106,
-    "name": "MIORA Smart Feeder 6L Dual Camera & Voice",
+    "name": "MIORA Smart Feeder 6L Pro",
     "series": "Flagship Series",
     "price": 1458000,
     "image": "assets/images/products/FEEDER-6L-DUALCAM/PRODUCT/hero.jpg",
