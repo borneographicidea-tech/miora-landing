@@ -1346,3 +1346,12 @@ VARIANT CARD
     margin-top:25px;
 
 }
+
+@media (max-width:768px){
+
+    .cart-item h4{
+        font-size:14px;
+        line-height:1.2;
+    }
+
+}
